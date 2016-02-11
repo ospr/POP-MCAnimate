@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
 
   s.dependency 'pop', '~> 1.0'
 
+  s.pod_target_xcconfig = { 'ALWAYS_SEARCH_USER_PATHS' => 'YES' }
+
   s.subspec 'Internal' do |ss|
     ss.source_files = 'POP+MCAnimate/Internal/*.{h,m}'
     ss.public_header_files = ''
